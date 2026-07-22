@@ -7,6 +7,7 @@ class SiteApp {
     this.setupFAQ();
     this.setupHovers();
     this.setupHeroSlideshow();
+    this.setupLottie();
     // hero failsafe if GSAP never loads
     setTimeout(() => {
       if (!window.gsap) document.querySelectorAll('.hero-eyebrow,.hero-title,.hero-sub,.hero-cta-wrap').forEach(el => { el.style.opacity = '1'; el.style.transform = 'none'; });
@@ -130,6 +131,16 @@ class SiteApp {
     };
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
+  }
+
+  setupLottie() {
+    const el = document.getElementById('lottie-projeto');
+    if (!el) return;
+    const start = () => {
+      if (!window.lottie) return setTimeout(start, 150);
+      window.lottie.loadAnimation({ container: el, renderer: 'svg', loop: true, autoplay: true, path: 'assets/anim-projeto.json' });
+    };
+    start();
   }
 
   setupHeroSlideshow() {

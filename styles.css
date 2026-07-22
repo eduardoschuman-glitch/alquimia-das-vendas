@@ -8,6 +8,8 @@
   @keyframes advMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
   @keyframes threadDraw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
   @keyframes heroKenBurns{from{transform:scale(1)}to{transform:scale(1.08)}}
+  @keyframes waPulse{0%{box-shadow:0 8px 30px rgba(16,24,38,.35),0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 8px 30px rgba(16,24,38,.35),0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 8px 30px rgba(16,24,38,.35),0 0 0 0 rgba(37,211,102,0)}}
+  .wa-float{animation:waPulse 2.8s ease-out infinite}
   .hero-slide.is-active .hero-slide-img{animation:heroKenBurns 6.5s ease-out forwards}
   .swiper-button-next,.swiper-button-prev{color:#C9A96A!important;width:52px!important;height:52px!important}
   .swiper-button-next:after,.swiper-button-prev:after{font-size:22px!important}
