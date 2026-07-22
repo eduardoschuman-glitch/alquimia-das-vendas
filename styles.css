@@ -16,6 +16,7 @@
   .swiper-pagination-bullet{background:#C9A96A!important}
   .swiper-pagination-bullet-active{background:#C9A96A!important}
   @media(max-width:760px){.swiper-button-next,.swiper-button-prev{display:none!important}}
+  @media(max-width:760px){.hero-section{min-height:auto!important}.hero-content{padding-top:120px!important;padding-bottom:44px!important}}
   .proto-card{transition:transform .45s cubic-bezier(.2,.8,.2,1),border-color .45s ease,box-shadow .45s ease}
   .proto-card:hover{transform:translateY(-6px);border-color:#C9A96A;box-shadow:0 18px 44px rgba(0,0,0,.38),0 0 22px rgba(201,169,106,.14)}
   .proto-card:hover .proto-ring{border-color:#C9A96A;box-shadow:0 0 22px rgba(201,169,106,.4)}
