@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alquimia das Vendas — Tráfego + Comercial para clínicas de estética</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="assets/logo-selo-tinta.png">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+</head>
+<body>
+<header class="site-header" style="position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:20px 6vw;transition:background .5s ease,padding .5s ease,box-shadow .5s ease;background:transparent">
+  <div style="position:relative;height:52px;width:300px">
+    <img class="logo-claro" src="assets/logo-horizontal-claro.png" alt="Alquimia das Vendas" style="position:absolute;inset:0;height:52px;width:auto;object-fit:contain;transition:opacity .4s ease;opacity:1">
+    <img class="logo-tinta" src="assets/logo-horizontal-tinta.png" alt="Alquimia das Vendas" style="position:absolute;inset:0;height:52px;width:auto;object-fit:contain;transition:opacity .4s ease;opacity:0">
+  </div>
+  <a href="https://wa.me/SEUNUMERO" class="cta cta-header" style="display:inline-flex;align-items:center;gap:10px;background:#C9A96A;color:#101826;font-family:'Inter',sans-serif;font-weight:600;font-size:14px;letter-spacing:.02em;padding:13px 26px;border-radius:2px;transition:background .3s ease,transform .3s ease">
+    <span>Quero uma agenda previsível</span>
+    <span class="arrow" style="display:inline-block;transition:transform .35s cubic-bezier(.2,.8,.2,1)">→</span>
+  </a>
+</header>
+
+<!-- ============ HERO ============ -->
+<section style="position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden">
+  <div class="hero-bg" style="position:absolute;top:-8%;left:0;right:0;height:116%;will-change:transform">
+    <div class="hero-slide is-active" style="position:absolute;inset:0;opacity:1;transition:opacity 1.5s ease-in-out;will-change:opacity"><div class="hero-slide-img" style="position:absolute;inset:0;background-image:url('assets/hero-jornada-01.png');background-size:cover;background-position:center;filter:saturate(.82);will-change:transform"></div></div>
+    <div class="hero-slide" style="position:absolute;inset:0;opacity:0;transition:opacity 1.5s ease-in-out;will-change:opacity"><div class="hero-slide-img" style="position:absolute;inset:0;background-image:url('assets/hero-jornada-02.png');background-size:cover;background-position:center;filter:saturate(.82);will-change:transform"></div></div>
+    <div class="hero-slide" style="position:absolute;inset:0;opacity:0;transition:opacity 1.5s ease-in-out;will-change:opacity"><div class="hero-slide-img" style="position:absolute;inset:0;background-image:url('assets/hero-jornada-03.png');background-size:cover;background-position:center;filter:saturate(.82);will-change:transform"></div></div>
+  </div>
+  <div style="position:absolute;inset:0;background:rgba(16,24,38,.25)"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(16,24,38,.94) 0%,rgba(16,24,38,.72) 45%,rgba(16,24,38,.35) 100%)"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,24,38,0) 55%,rgba(16,24,38,.72) 100%)"></div>
+  <div style="position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:140px 6vw 80px;width:100%">
+    <div class="hero-eyebrow" style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.32em;text-transform:uppercase;color:#C9A96A;margin-bottom:30px;opacity:0">Agência de tráfego + comercial para estética</div>
+    <h1 class="hero-title" style="font-family:'Playfair Display',serif;font-weight:600;color:#F5F1EA;font-size:clamp(38px,6vw,86px);line-height:1.04;letter-spacing:-.01em;max-width:16ch;opacity:0">Leads qualificados toda semana e um comercial treinado para <em style="font-style:italic;color:#C9A96A">lotar sua agenda.</em></h1>
+    <p class="hero-sub" style="margin-top:34px;max-width:60ch;color:rgba(245,241,234,.82);font-size:clamp(16px,1.5vw,20px);line-height:1.6;font-weight:300;opacity:0">A Alquimia das Vendas é a agência especializada em clínicas de estética corporal e emagrecimento. Eu uno tráfego que atrai pacientes com poder aquisitivo e treinamento comercial intensivo, para você parar de viver de mês bom e mês ruim.</p>
+    <div class="hero-cta-wrap" style="margin-top:44px;opacity:0">
+      <a href="https://wa.me/SEUNUMERO" class="cta" style="display:inline-flex;align-items:center;gap:12px;background:#C9A96A;color:#101826;font-family:'Inter',sans-serif;font-weight:600;font-size:16px;letter-spacing:.01em;padding:19px 38px;border-radius:2px;transition:background .3s ease,transform .3s ease">
+        <span>Quero uma agenda previsível</span>
+        <span class="arrow" style="display:inline-block;transition:transform .35s cubic-bezier(.2,.8,.2,1)">→</span>
+      </a>
+    </div>
+  </div>
+  <div style="position:absolute;bottom:34px;left:50%;transform:translateX(-50%);z-index:2;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.3em;color:rgba(245,241,234,.5);text-transform:uppercase">Role para descobrir</div>
+</section>
+
+<!-- ============ AUTHORITY MARQUEE ============ -->
+<div style="background:#101826;border-top:1px solid rgba(201,169,106,.22);border-bottom:1px solid rgba(201,169,106,.22);overflow:hidden;padding:26px 0">
+  <div style="display:flex;width:max-content;animation:advMarquee 34s linear infinite">
+    <div class="marquee-track" style="display:flex;align-items:center;gap:56px;padding-right:56px;font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:.22em;text-transform:uppercase;color:rgba(245,241,234,.72);white-space:nowrap">
+      <span>+7 anos na estética</span><span style="color:#C9A96A">◆</span><span>+200 clínicas com o comercial treinado</span><span style="color:#C9A96A">◆</span><span>Co-criação do Método Medida Exata</span><span style="color:#C9A96A">◆</span>
+      <span>+7 anos na estética</span><span style="color:#C9A96A">◆</span><span>+200 clínicas com o comercial treinado</span><span style="color:#C9A96A">◆</span><span>Co-criação do Método Medida Exata</span><span style="color:#C9A96A">◆</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 01 DIAGNÓSTICO ============ -->
+<section style="background:#F5F1EA;padding:clamp(80px,11vw,150px) 6vw;position:relative">
+  <div style="max-width:900px;margin:0 auto">
+    <h2 class="js-reveal" style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(28px,4vw,50px);line-height:1.12;letter-spacing:-.01em;max-width:20ch;margin-bottom:40px;opacity:0">Se você já tentou tráfego antes, essa história <em style="font-style:italic;color:#3E6E8E">provavelmente é sua.</em></h2>
+    <div style="max-width:64ch;font-size:clamp(16px,1.4vw,19px);line-height:1.75;color:rgba(20,24,28,.82);font-weight:400">
+      <p class="js-reveal" style="margin-bottom:22px;opacity:0">No começo funcionou. Os leads chegaram, a agenda encheu, você achou que tinha resolvido.</p>
+      <p class="js-reveal" style="margin-bottom:22px;opacity:0">Aí, com o tempo, começou a receber cada vez menos leads. E os que chegavam eram só curiosos perguntando o preço, ou nem respondiam as mensagens.</p>
+      <p class="js-reveal" style="margin-bottom:22px;opacity:0">Você impulsiona post. Faz promoção quando o movimento cai. Já trocou de agência mais de uma vez. Já ouviu "sua campanha está ótima, é só investir mais", investiu, e não vendeu.</p>
+      <p class="js-reveal" style="margin-bottom:22px;opacity:0">E no fundo, a pergunta que tira o sono é sempre a mesma: <strong style="font-weight:600;color:#14181C;border-bottom:2px solid #C9A96A;padding-bottom:1px">"se esse mês não vender, como eu pago as contas?"</strong></p>
+      <p class="js-reveal" style="opacity:0;font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(19px,2vw,26px);line-height:1.5;color:#14181C;margin-top:36px">A verdade é que o problema quase nunca é o que te disseram que era.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 A VIRADA ============ -->
+<section style="background:#101826;color:#F5F1EA;padding:clamp(80px,11vw,150px) 6vw;position:relative;overflow:hidden">
+  <img src="assets/logo-selo-claro.png" alt="" aria-hidden="true" style="position:absolute;top:50%;right:-120px;transform:translateY(-50%);width:520px;opacity:.05;pointer-events:none">
+  <div style="max-width:900px;margin:0 auto;position:relative;z-index:2">
+    <h2 class="js-reveal" style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(28px,4vw,50px);line-height:1.12;letter-spacing:-.01em;max-width:18ch;margin-bottom:40px;opacity:0">O problema não é a ferramenta. <em style="font-style:italic;color:#C9A96A">É o sistema.</em></h2>
+    <div style="max-width:64ch;font-size:clamp(16px,1.4vw,19px);line-height:1.75;color:rgba(245,241,234,.8);font-weight:300">
+      <p class="js-reveal" style="margin-bottom:22px;opacity:0">"Preciso de mais seguidores." "Preciso de mais alcance." "Preciso de outro gestor de tráfego."</p>
+      <p class="js-reveal" style="margin-bottom:22px;opacity:0">Não. Venda não acontece por causa de um único fator. Ela depende de oferta, posicionamento, atendimento, processo comercial, follow-up e tráfego trabalhando juntos.</p>
+      <p class="js-reveal" style="margin-bottom:22px;opacity:0">As clínicas que realmente escalam têm oferta clara, anunciam de forma contínua (e não só quando a agenda esvazia), possuem um processo comercial consistente para converter os leads e acompanham indicadores em vez de decidir pela emoção.</p>
+      <p class="js-reveal" style="opacity:0">O marketing não vende sozinho. Ele traz a paciente até a porta. <strong style="font-weight:600;color:#F5F1EA;border-bottom:2px solid #C9A96A;padding-bottom:1px">Quem fecha é o seu comercial.</strong> E é exatamente aí que a maioria das clínicas perde dinheiro, e onde a Alquimia é diferente.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 QUEM SOU EU ============ -->
+<section style="background:#F5F1EA;padding:clamp(80px,11vw,150px) 6vw">
+  <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:64px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:56px;align-items:start" class="quem-grid">
+      <div>
+        <h2 class="js-reveal" style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(26px,3.4vw,44px);line-height:1.14;letter-spacing:-.01em;margin-bottom:34px;opacity:0">Eu sou Eduardo Schuman. E a Alquimia das Vendas nasceu <em style="font-style:italic;color:#3E6E8E">de dentro da estética,</em> não de fora dela.</h2>
+        <div style="font-size:clamp(15px,1.35vw,18px);line-height:1.75;color:rgba(20,24,28,.82)">
+          <p class="js-reveal" style="margin-bottom:20px;opacity:0">Fui vendedor profissional por 10 anos. Ali aprendi que vender não é convencer, é entender de pessoas.</p>
+          <p class="js-reveal" style="margin-bottom:20px;opacity:0">Depois, por 3 anos, fui mentor do Medida Exata, um dos maiores programas de emagrecimento do país, ao lado da Priscila Palazzo. Convivendo com centenas de pacientes, aprendi na prática o que faz essa mulher decidir comprar, algo que nenhum marketing para clínicas tem.</p>
+          <p class="js-reveal" style="margin-bottom:20px;opacity:0">E vi o mesmo padrão em todas as clínicas: profissionais excelentes que não atraíam pacientes com constância, e um comercial que não convertia os leads.</p>
+          <p class="js-reveal" style="margin-bottom:20px;opacity:0">A Alquimia nasceu para resolver as duas pontas: anúncio que traz a paciente certa e treinamento que vira faturamento. Mais de 200 clínicas já passaram pelo meu acompanhamento.</p>
+          <p class="js-reveal" style="opacity:0;font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(18px,1.8vw,23px);line-height:1.5;color:#14181C;margin-top:30px"><span style="color:#C9A96A">Alquimia é transformação.</span> É o que eu faço com a sua clínica e o que ela faz com a autoestima das suas pacientes.</p>
+        </div>
+      </div>
+      <div class="js-reveal" style="opacity:0;display:flex;flex-direction:column;gap:20px">
+        <div class="hover-zoom" style="position:relative;overflow:hidden;border:1px solid #C9A96A;padding:8px;background:#fff">
+          <div style="overflow:hidden"><img class="zoom-target" src="assets/eduardo-medida-exata.jpg" alt="Eduardo Schuman no palco do Medida Exata" loading="lazy" style="width:100%;height:auto;transition:transform .8s cubic-bezier(.2,.8,.2,1)"></div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+          <div class="hover-zoom" style="overflow:hidden;border:1px solid rgba(201,169,106,.5)"><img class="zoom-target" src="assets/eduardo-bahia.jpg" alt="Eduardo palestrando" loading="lazy" style="width:100%;height:220px;object-fit:cover;transition:transform .8s cubic-bezier(.2,.8,.2,1)"></div>
+          <div class="hover-zoom" style="overflow:hidden;border:1px solid rgba(201,169,106,.5)"><img class="zoom-target" src="assets/eduardo-priscila.jpg" alt="Eduardo ao lado da Priscila Palazzo" loading="lazy" style="width:100%;height:220px;object-fit:cover;transition:transform .8s cubic-bezier(.2,.8,.2,1)"></div>
+        </div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;color:rgba(20,24,28,.5);text-transform:uppercase;text-align:center">Ao lado de Priscila Palazzo — Método Medida Exata</div>
+      </div>
+    </div>
+    <!-- counters -->
+    <div style="border-top:1px solid rgba(201,169,106,.4);padding-top:52px;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:32px">
+      <div class="js-reveal" style="opacity:0;text-align:center">
+        <div style="font-family:'Playfair Display',serif;font-size:clamp(40px,5vw,64px);color:#14181C;line-height:1">+<span class="counter" data-count="10">10</span></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.18em;color:rgba(20,24,28,.6);text-transform:uppercase;margin-top:12px">anos de vendas</div>
+      </div>
+      <div class="js-reveal" style="opacity:0;text-align:center">
+        <div style="font-family:'Playfair Display',serif;font-size:clamp(40px,5vw,64px);color:#14181C;line-height:1">+<span class="counter" data-count="200">200</span></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.18em;color:rgba(20,24,28,.6);text-transform:uppercase;margin-top:12px">clínicas treinadas</div>
+      </div>
+      <div class="js-reveal" style="opacity:0;text-align:center">
+        <div style="font-family:'Playfair Display',serif;font-size:clamp(40px,5vw,64px);color:#14181C;line-height:1">+<span class="counter" data-count="7">7</span></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.18em;color:rgba(20,24,28,.6);text-transform:uppercase;margin-top:12px">anos na estética</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 O QUE A ALQUIMIA FAZ ============ -->
+<section style="background:#F5F1EA;padding:clamp(80px,11vw,150px) 6vw;border-top:1px solid rgba(20,24,28,.08)">
+  <div style="max-width:1180px;margin:0 auto">
+    <h2 class="js-reveal" style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(28px,4vw,50px);line-height:1.12;letter-spacing:-.01em;max-width:22ch;margin-bottom:26px;opacity:0">Leads qualificados que chegam, e um comercial <em style="font-style:italic;color:#3E6E8E">treinado para converter.</em></h2>
+    <p class="js-reveal" style="max-width:60ch;font-size:clamp(16px,1.4vw,19px);line-height:1.7;color:rgba(20,24,28,.8);margin-bottom:60px;opacity:0">Eu só trabalho com estética corporal e emagrecimento. Não experimento na sua verba. Aplico um sistema montado ao longo de mais de 7 anos dentro de clínicas como a sua.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px">
+      <div class="js-reveal card-lift" style="opacity:0;background:#fff;border:1px solid rgba(20,24,28,.08);border-top:2px solid #C9A96A;padding:38px 34px;transition:transform .4s ease,box-shadow .4s ease">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.2em;color:#C9A96A;margin-bottom:22px">01</div>
+        <h3 style="font-family:'Playfair Display',serif;font-weight:600;font-size:22px;line-height:1.25;margin-bottom:16px">Tráfego que atrai o lead certo</h3>
+        <p style="font-size:15.5px;line-height:1.65;color:rgba(20,24,28,.72)">Campanhas para gordura localizada e emagrecimento que trazem leads mais qualificados e com melhor poder aquisitivo, não curiosos de preço.</p>
+      </div>
+      <div class="js-reveal card-lift" style="opacity:0;background:#fff;border:1px solid rgba(20,24,28,.08);border-top:2px solid #C9A96A;padding:38px 34px;transition:transform .4s ease,box-shadow .4s ease">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.2em;color:#C9A96A;margin-bottom:22px">02</div>
+        <h3 style="font-family:'Playfair Display',serif;font-weight:600;font-size:22px;line-height:1.25;margin-bottom:16px">Criativos validados no mercado</h3>
+        <p style="font-size:15.5px;line-height:1.65;color:rgba(20,24,28,.72)">Você não fica no escuro tentando adivinhar o que gravar. Eu entrego roteiros e orientações de gravação de criativos já validados no nicho: o que falar, como mostrar e o que funciona para gerar desejo e chamar a paciente certa.</p>
+      </div>
+      <div class="js-reveal card-lift" style="opacity:0;background:#101826;color:#F5F1EA;border-top:2px solid #C9A96A;padding:0;overflow:hidden;transition:transform .4s ease,box-shadow .4s ease;grid-row:span 1">
+        
+        <div style="padding:34px 34px 38px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.2em;color:#C9A96A;margin-bottom:22px">03</div>
+          <h3 style="font-family:'Playfair Display',serif;font-weight:600;font-size:22px;line-height:1.25;margin-bottom:16px">Treinamento comercial intensivo</h3>
+          <p style="font-size:15.5px;line-height:1.65;color:rgba(245,241,234,.75)">Um trabalho profundo com o time comercial (ou com quem responde o WhatsApp): elevo a motivação da atendente e o poder de persuasão para aplicar o script, cobrar a consulta antecipadamente e garantir mais comparecimento das pacientes.</p>
+        </div>
+      </div>
+      <div class="js-reveal card-lift" style="opacity:0;background:#fff;border:1px solid rgba(20,24,28,.08);border-top:2px solid #C9A96A;padding:38px 34px;transition:transform .4s ease,box-shadow .4s ease">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.2em;color:#C9A96A;margin-bottom:22px">04</div>
+        <h3 style="font-family:'Playfair Display',serif;font-weight:600;font-size:22px;line-height:1.25;margin-bottom:16px">Script validado em fluxograma</h3>
+        <p style="font-size:15.5px;line-height:1.65;color:rgba(20,24,28,.72)">Um roteiro de atendimento que desenvolvi a partir de milhares de atendimentos reais na estética, testando o que funciona e o que não funciona, para sua equipe aplicar com segurança em cada etapa da conversa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROTOCOLOS & TECNOLOGIAS ============ -->
+<section style="position:relative;background:#101826;padding:clamp(80px,11vw,150px) 6vw;overflow:hidden">
+  <div aria-hidden="true" style="position:absolute;inset:0;background-image:linear-gradient(rgba(201,169,106,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(201,169,106,.06) 1px,transparent 1px);background-size:64px 64px;pointer-events:none"></div>
+  <div aria-hidden="true" style="position:absolute;top:0;left:6vw;right:6vw;height:1px;background:linear-gradient(90deg,transparent,rgba(201,169,106,.5) 20%,rgba(201,169,106,.5) 80%,transparent)"></div>
+  <div style="position:relative;z-index:2;max-width:1180px;margin:0 auto">
+    <div class="js-reveal" style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.3em;color:#C9A96A;margin-bottom:26px;opacity:0;text-transform:uppercase">Protocolos &amp; Tecnologias</div>
+    <h2 class="js-reveal" style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(28px,4vw,50px);line-height:1.12;letter-spacing:-.01em;color:#F5F1EA;max-width:20ch;margin-bottom:24px;opacity:0">Eu já vendi o que a sua clínica <em style="font-style:italic;color:#C9A96A">vende.</em></h2>
+    <p class="js-reveal" style="max-width:62ch;font-size:clamp(16px,1.4vw,19px);line-height:1.7;color:rgba(245,241,234,.75);font-weight:300;margin-bottom:66px;opacity:0">Campanhas e scripts validados nos principais protocolos de estética corporal e emagrecimento do mercado. Se está na sua clínica, provavelmente já passou pelas minhas mãos.</p>
+    <div class="proto-grid">
+      <div class="js-reveal proto-card" style="opacity:0;background:#141d2e;border:1px solid rgba(201,169,106,.25);border-radius:16px;padding:36px 22px 30px;display:flex;flex-direction:column;align-items:center;text-align:center">
+        <div class="proto-ring" style="width:130px;height:130px;border-radius:50%;border:1px solid rgba(201,169,106,.55);padding:5px;transition:border-color .45s ease,box-shadow .45s ease"><div style="width:100%;height:100%;border-radius:50%;overflow:hidden;background:#0c1320"><img src="assets/proto-endolaser.png" alt="Endolaser" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#F5F1EA;margin-top:24px">Endolaser</div>
+        <div style="font-family:'Inter',sans-serif;font-size:13px;line-height:1.4;color:rgba(245,241,234,.55);margin-top:9px">Laser para gordura localizada</div>
+      </div>
+      <div class="js-reveal proto-card" style="opacity:0;background:#141d2e;border:1px solid rgba(201,169,106,.25);border-radius:16px;padding:36px 22px 30px;display:flex;flex-direction:column;align-items:center;text-align:center">
+        <div class="proto-ring" style="width:130px;height:130px;border-radius:50%;border:1px solid rgba(201,169,106,.55);padding:5px;transition:border-color .45s ease,box-shadow .45s ease"><div style="width:100%;height:100%;border-radius:50%;overflow:hidden;background:#F5F1EA;display:flex;align-items:center;justify-content:center"><img src="assets/proto-medida-exata.png" alt="Medida Exata" loading="lazy" style="width:74%;height:74%;object-fit:contain;display:block"></div></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#F5F1EA;margin-top:24px">Medida Exata</div>
+        <div style="font-family:'Inter',sans-serif;font-size:13px;line-height:1.4;color:rgba(245,241,234,.55);margin-top:9px">Programa de emagrecimento</div>
+      </div>
+      <div class="js-reveal proto-card" style="opacity:0;background:#141d2e;border:1px solid rgba(201,169,106,.25);border-radius:16px;padding:36px 22px 30px;display:flex;flex-direction:column;align-items:center;text-align:center">
+        <div class="proto-ring" style="width:130px;height:130px;border-radius:50%;border:1px solid rgba(201,169,106,.55);padding:5px;transition:border-color .45s ease,box-shadow .45s ease"><div style="width:100%;height:100%;border-radius:50%;overflow:hidden;background:#F5F1EA;display:flex;align-items:center;justify-content:center"><img src="assets/proto-s5.png" alt="S5" loading="lazy" style="width:74%;height:74%;object-fit:contain;display:block"></div></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#F5F1EA;margin-top:24px">S5</div>
+        <div style="font-family:'Inter',sans-serif;font-size:13px;line-height:1.4;color:rgba(245,241,234,.55);margin-top:9px">Protocolo de emagrecimento</div>
+      </div>
+      <div class="js-reveal proto-card" style="opacity:0;background:#141d2e;border:1px solid rgba(201,169,106,.25);border-radius:16px;padding:36px 22px 30px;display:flex;flex-direction:column;align-items:center;text-align:center">
+        <div class="proto-ring" style="width:130px;height:130px;border-radius:50%;border:1px solid rgba(201,169,106,.55);padding:5px;transition:border-color .45s ease,box-shadow .45s ease"><div style="width:100%;height:100%;border-radius:50%;overflow:hidden;background:#F5F1EA;display:flex;align-items:center;justify-content:center"><img src="assets/proto-afinese.png" alt="Afine-se" loading="lazy" style="width:78%;height:78%;object-fit:contain;display:block"></div></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#F5F1EA;margin-top:24px">Afine-se</div>
+        <div style="font-family:'Inter',sans-serif;font-size:13px;line-height:1.4;color:rgba(245,241,234,.55);margin-top:9px">Emagrecimento inteligente</div>
+      </div>
+      <div class="js-reveal proto-card" style="opacity:0;background:#141d2e;border:1px solid rgba(201,169,106,.25);border-radius:16px;padding:36px 22px 30px;display:flex;flex-direction:column;align-items:center;text-align:center">
+        <div class="proto-ring" style="width:130px;height:130px;border-radius:50%;border:1px solid rgba(201,169,106,.55);padding:5px;transition:border-color .45s ease,box-shadow .45s ease"><div style="width:100%;height:100%;border-radius:50%;overflow:hidden;background:#0c1320"><img src="assets/proto-ultraformer.png" alt="Ultraformer" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#F5F1EA;margin-top:24px">Ultraformer</div>
+        <div style="font-family:'Inter',sans-serif;font-size:13px;line-height:1.4;color:rgba(245,241,234,.55);margin-top:9px">Ultrassom micro e macrofocado</div>
+      </div>
+      <div class="js-reveal proto-card" style="opacity:0;background:#141d2e;border:1px solid rgba(201,169,106,.25);border-radius:16px;padding:36px 22px 30px;display:flex;flex-direction:column;align-items:center;text-align:center">
+        <div class="proto-ring" style="width:130px;height:130px;border-radius:50%;border:1px solid rgba(201,169,106,.55);padding:5px;transition:border-color .45s ease,box-shadow .45s ease"><div style="width:100%;height:100%;border-radius:50%;overflow:hidden;background:#0c1320"><img src="assets/proto-criolipolise.png" alt="Criolipólise" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#F5F1EA;margin-top:24px">Criolipólise</div>
+        <div style="font-family:'Inter',sans-serif;font-size:13px;line-height:1.4;color:rgba(245,241,234,.55);margin-top:9px">Congelamento de gordura</div>
+      </div>
+      <div class="js-reveal proto-card" style="opacity:0;background:#141d2e;border:1px solid rgba(201,169,106,.25);border-radius:16px;padding:36px 22px 30px;display:flex;flex-direction:column;align-items:center;text-align:center">
+        <div class="proto-ring" style="width:130px;height:130px;border-radius:50%;border:1px solid rgba(201,169,106,.55);padding:5px;transition:border-color .45s ease,box-shadow .45s ease"><div style="width:100%;height:100%;border-radius:50%;overflow:hidden;background:#0c1320"><img src="assets/proto-lavieen.png" alt="Lavieen" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#F5F1EA;margin-top:24px">Lavieen</div>
+        <div style="font-family:'Inter',sans-serif;font-size:13px;line-height:1.4;color:rgba(245,241,234,.55);margin-top:9px">Laser BB rejuvenescedor</div>
+      </div>
+      <div class="js-reveal proto-card" style="opacity:0;background:#141d2e;border:1px solid rgba(201,169,106,.25);border-radius:16px;padding:36px 22px 30px;display:flex;flex-direction:column;align-items:center;text-align:center">
+        <div class="proto-ring" style="width:130px;height:130px;border-radius:50%;border:1px solid rgba(201,169,106,.55);padding:5px;transition:border-color .45s ease,box-shadow .45s ease"><div style="width:100%;height:100%;border-radius:50%;overflow:hidden;background:#0c1320"><img src="assets/proto-radiofrequencia.png" alt="Radiofrequência corporal" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#F5F1EA;margin-top:24px">Radiofrequência corporal</div>
+        <div style="font-family:'Inter',sans-serif;font-size:13px;line-height:1.4;color:rgba(245,241,234,.55);margin-top:9px">Firmeza e colágeno</div>
+      </div>
+      <div class="js-reveal proto-card" style="opacity:0;background:#141d2e;border:1px solid rgba(201,169,106,.25);border-radius:16px;padding:36px 22px 30px;display:flex;flex-direction:column;align-items:center;text-align:center">
+        <div class="proto-ring" style="width:130px;height:130px;border-radius:50%;border:1px solid rgba(201,169,106,.55);padding:5px;transition:border-color .45s ease,box-shadow .45s ease"><div style="width:100%;height:100%;border-radius:50%;overflow:hidden;background:#0c1320"><img src="assets/proto-depilacao.png" alt="Depilação a Laser" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#F5F1EA;margin-top:24px">Depilação a Laser</div>
+        <div style="font-family:'Inter',sans-serif;font-size:13px;line-height:1.4;color:rgba(245,241,234,.55);margin-top:9px">Alta demanda recorrente</div>
+      </div>
+    </div>
+    <p class="js-reveal" style="text-align:center;font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(18px,2vw,26px);line-height:1.5;color:#F5F1EA;margin-top:64px;opacity:0">Cada protocolo desses já tem <span style="color:#C9A96A">campanha, criativo e script validados.</span></p>
+  </div>
+</section>
+
+<!-- ============ 05 O SCRIPT DE FLUXOGRAMA ============ -->
+<section style="background:#101826;color:#F5F1EA;padding:clamp(80px,11vw,150px) 6vw;overflow:hidden">
+  <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:56px;align-items:center">
+    <div>
+      <h2 class="js-reveal" style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(28px,3.6vw,46px);line-height:1.14;letter-spacing:-.01em;margin-bottom:32px;opacity:0">O mesmo script que já treinei em <em style="font-style:italic;color:#C9A96A">mais de 200 clínicas.</em></h2>
+      <div style="font-size:clamp(16px,1.4vw,19px);line-height:1.75;color:rgba(245,241,234,.8);font-weight:300">
+        <p class="js-reveal" style="margin-bottom:22px;opacity:0">Não é "teoria de vendas". É um fluxograma prático: a sua atendente sabe exatamente o que responder em cada situação, da primeira mensagem até a paciente confirmar e pagar a consulta antecipada.</p>
+        <p class="js-reveal" style="opacity:0">Isso é o que separa uma clínica que "recebe curiosos" de uma clínica que agenda pacientes prontas para começar, e que aparecem no dia.</p>
+      </div>
+    </div>
+    <div class="js-reveal" style="opacity:0;position:relative;border:1px solid rgba(201,169,106,.4);padding:10px;background:rgba(255,255,255,.02)">
+      <div style="position:relative;overflow:hidden">
+        <img src="assets/script-fluxograma.png" alt="Script de WhatsApp em fluxograma" loading="lazy" style="width:100%;height:auto;filter:blur(9px);transform:scale(1.05)">
+        <div style="position:absolute;inset:0;background:rgba(16,24,38,.35)"></div>
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
+          <div style="text-align:center;background:rgba(16,24,38,.72);border:1px solid #C9A96A;padding:22px 30px;backdrop-filter:blur(2px)">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.2em;color:#C9A96A;text-transform:uppercase;margin-bottom:8px">Validado em</div>
+            <div style="font-family:'Playfair Display',serif;font-size:34px;color:#F5F1EA;line-height:1">+200 clínicas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 O QUE VOCÊ RECEBE ============ -->
+<section style="background:#F5F1EA;padding:clamp(80px,11vw,150px) 0">
+  <div style="max-width:1180px;margin:0 auto;padding:0 6vw">
+    <h2 class="js-reveal" style="text-align:center;font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(28px,3.8vw,48px);line-height:1.14;letter-spacing:-.01em;max-width:22ch;margin:0 auto 20px;opacity:0">Isso não é uma campanha que a gente <em style="font-style:italic;color:#3E6E8E">liga e esquece.</em></h2>
+    <p class="js-reveal" style="text-align:center;max-width:60ch;margin:0 auto 60px;font-size:clamp(16px,1.4vw,19px);line-height:1.7;color:rgba(20,24,28,.75)">É acompanhamento de perto, mês a mês, ao lado do seu time. Reuniões, treinamento e ajuste fino até a agenda encher, e continuar cheia.</p>
+    <div class="receb-points js-reveal" style="opacity:0;display:grid;grid-template-columns:repeat(3,1fr);gap:36px 44px;max-width:960px;margin:0 auto 76px">
+      <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px">
+        <div style="width:38px;height:38px;border:1px solid #C9A96A;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#C9A96A;font-family:'IBM Plex Mono',monospace;font-size:13px">01</div>
+        <h3 style="font-family:'Inter',sans-serif;font-weight:600;font-size:18px">Treinamentos mensais</h3>
+        <p style="font-size:15px;line-height:1.6;color:rgba(20,24,28,.7)">com o seu time comercial, para manter a equipe afiada, motivada e aplicando o script com consistência.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px">
+        <div style="width:38px;height:38px;border:1px solid #C9A96A;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#C9A96A;font-family:'IBM Plex Mono',monospace;font-size:13px">02</div>
+        <h3 style="font-family:'Inter',sans-serif;font-weight:600;font-size:18px">Relatórios semanais</h3>
+        <p style="font-size:15px;line-height:1.6;color:rgba(20,24,28,.7)">com os números que importam, para você tomar decisão com dado, não pela emoção.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px">
+        <div style="width:38px;height:38px;border:1px solid #C9A96A;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#C9A96A;font-family:'IBM Plex Mono',monospace;font-size:13px">03</div>
+        <h3 style="font-family:'Inter',sans-serif;font-weight:600;font-size:18px">Campanhas contínuas</h3>
+        <p style="font-size:15px;line-height:1.6;color:rgba(20,24,28,.7)">rodando de forma constante, e não só quando a agenda esvazia.</p>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<!-- ============ 07 DEPOIMENTOS ============ -->
+<section style="background:#101826;color:#F5F1EA;padding:clamp(80px,11vw,150px) 6vw;overflow:hidden">
+  <div style="max-width:1080px;margin:0 auto">
+    <div class="js-reveal" style="text-align:center;margin-bottom:60px;opacity:0">
+      <h2 style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(28px,4vw,50px);line-height:1.12">Não sou eu quem diz. <em style="font-style:italic;color:#C9A96A">São elas.</em></h2>
+    </div>
+    <div class="js-reveal" style="opacity:0">
+      <div class="swiper depoimentos-swiper" style="padding:10px 4px 60px">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="height:auto">
+            <div style="background:rgba(245,241,234,.04);border:1px solid rgba(201,169,106,.3);padding:48px 44px;height:100%;display:flex;flex-direction:column">
+              <div style="font-family:'Playfair Display',serif;font-size:54px;color:#C9A96A;line-height:.6;height:26px">“</div>
+              <p style="font-size:clamp(17px,1.6vw,21px);line-height:1.65;color:rgba(245,241,234,.9);font-weight:300;margin-bottom:34px;flex:1">Antes eu vivia de mês bom e mês ruim. Hoje minha secretária segue o script, cobra a consulta antecipada e a agenda fecha a semana cheia. Foi a primeira vez que senti previsibilidade na clínica.</p>
+              <div style="display:flex;align-items:center;gap:16px">
+                <div style="width:60px;height:60px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,#3E6E8E,#101826);border:1px solid #C9A96A;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:22px;color:#F5F1EA">MF</div>
+                <div><div style="font-weight:600;font-size:16px">Maria Fernanda</div><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;color:rgba(245,241,234,.55);margin-top:3px">Clínica de Estética Corporal</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" style="height:auto">
+            <div style="background:rgba(245,241,234,.04);border:1px solid rgba(201,169,106,.3);padding:48px 44px;height:100%;display:flex;flex-direction:column">
+              <div style="font-family:'Playfair Display',serif;font-size:54px;color:#C9A96A;line-height:.6;height:26px">“</div>
+              <p style="font-size:clamp(17px,1.6vw,21px);line-height:1.65;color:rgba(245,241,234,.9);font-weight:300;margin-bottom:34px;flex:1">Já tinha passado por três agências e só recebia curioso perguntando preço. Com o Eduardo, o lead chega mais qualificado e minha equipe aprendeu a conduzir a conversa até o fechamento. O treinamento comercial mudou o jogo.</p>
+              <div style="display:flex;align-items:center;gap:16px">
+                <div style="width:60px;height:60px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,#C9A96A,#8a6f42);border:1px solid #C9A96A;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:22px;color:#101826">AP</div>
+                <div><div style="font-weight:600;font-size:16px">Ana Paula</div><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;color:rgba(245,241,234,.55);margin-top:3px">Clínica de Emagrecimento</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" style="height:auto">
+            <div style="background:rgba(245,241,234,.04);border:1px solid rgba(201,169,106,.3);padding:48px 44px;height:100%;display:flex;flex-direction:column">
+              <div style="font-family:'Playfair Display',serif;font-size:54px;color:#C9A96A;line-height:.6;height:26px">“</div>
+              <p style="font-size:clamp(17px,1.6vw,21px);line-height:1.65;color:rgba(245,241,234,.9);font-weight:300;margin-bottom:34px;flex:1">O que me conquistou foi o acompanhamento: treinamento todo mês, relatório toda semana. Não é campanha ligada e esquecida — é alguém cuidando do sistema inteiro junto comigo.</p>
+              <div style="display:flex;align-items:center;gap:16px">
+                <div style="width:60px;height:60px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,#3E6E8E,#C9A96A);border:1px solid #C9A96A;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:22px;color:#101826">JU</div>
+                <div><div style="font-weight:600;font-size:16px">Juliana</div><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;color:rgba(245,241,234,.55);margin-top:3px">Estética e Gordura Localizada</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 PARA QUEM É ============ -->
+<section style="background:#F5F1EA;padding:clamp(80px,11vw,150px) 6vw">
+  <div style="max-width:1080px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px">
+      <div class="js-reveal" style="opacity:0;background:#fff;border:1px solid rgba(201,169,106,.4);padding:44px 40px">
+        <h3 style="font-family:'Playfair Display',serif;font-weight:600;font-size:26px;margin-bottom:28px">A Alquimia é <span style="color:#C9A96A">para você</span> se:</h3>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:18px">
+          <li style="display:flex;gap:14px;align-items:flex-start;font-size:16.5px;line-height:1.55;color:rgba(20,24,28,.82)"><span style="color:#C9A96A;flex-shrink:0;font-size:18px;line-height:1.4">✓</span> Tem uma clínica de estética corporal, gordura localizada ou emagrecimento</li>
+          <li style="display:flex;gap:14px;align-items:flex-start;font-size:16.5px;line-height:1.55;color:rgba(20,24,28,.82)"><span style="color:#C9A96A;flex-shrink:0;font-size:18px;line-height:1.4">✓</span> Está cansada de depender só de indicação e Instagram</li>
+          <li style="display:flex;gap:14px;align-items:flex-start;font-size:16.5px;line-height:1.55;color:rgba(20,24,28,.82)"><span style="color:#C9A96A;flex-shrink:0;font-size:18px;line-height:1.4">✓</span> Quer leads qualificados e previsibilidade, não mais uma "promessa de escala"</li>
+          <li style="display:flex;gap:14px;align-items:flex-start;font-size:16.5px;line-height:1.55;color:rgba(20,24,28,.82)"><span style="color:#C9A96A;flex-shrink:0;font-size:18px;line-height:1.4">✓</span> Entende que tráfego é investimento recorrente, não uma ação pontual</li>
+        </ul>
+      </div>
+      <div class="js-reveal" style="opacity:0;background:transparent;border:1px solid rgba(20,24,28,.15);padding:44px 40px">
+        <h3 style="font-family:'Playfair Display',serif;font-weight:600;font-size:26px;margin-bottom:28px;color:rgba(20,24,28,.65)">Não é para você se:</h3>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:18px">
+          <li style="display:flex;gap:14px;align-items:flex-start;font-size:16.5px;line-height:1.55;color:rgba(20,24,28,.6)"><span style="color:rgba(20,24,28,.4);flex-shrink:0;font-size:18px;line-height:1.4">—</span> Procura resultado mágico da noite para o dia</li>
+          <li style="display:flex;gap:14px;align-items:flex-start;font-size:16.5px;line-height:1.55;color:rgba(20,24,28,.6)"><span style="color:rgba(20,24,28,.4);flex-shrink:0;font-size:18px;line-height:1.4">—</span> Não quer treinar o comercial e melhorar o atendimento</li>
+          <li style="display:flex;gap:14px;align-items:flex-start;font-size:16.5px;line-height:1.55;color:rgba(20,24,28,.6)"><span style="color:rgba(20,24,28,.4);flex-shrink:0;font-size:18px;line-height:1.4">—</span> Quer ligar campanha só quando a agenda esvaziar</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 09 COMO FUNCIONA ============ -->
+<section style="background:#F5F1EA;padding:clamp(80px,11vw,150px) 6vw;border-top:1px solid rgba(20,24,28,.08)">
+  <div style="max-width:1080px;margin:0 auto">
+    <h2 class="js-reveal" style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(28px,4vw,50px);line-height:1.12;margin-bottom:70px;max-width:20ch;opacity:0">Do diagnóstico à agenda cheia, <em style="font-style:italic;color:#3E6E8E">em 3 passos:</em></h2>
+    <div style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:44px">
+      <svg class="thread-svg" viewBox="0 0 1000 4" preserveAspectRatio="none" style="position:absolute;top:26px;left:0;width:100%;height:4px;overflow:visible;display:none" aria-hidden="true"><line x1="0" y1="2" x2="1000" y2="2" stroke="#C9A96A" stroke-width="1" stroke-dasharray="1000" stroke-dashoffset="1000" pathLength="1"></line></svg>
+      <div class="js-reveal" style="opacity:0;position:relative">
+        <div style="width:54px;height:54px;border:1px solid #C9A96A;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#F5F1EA;font-family:'IBM Plex Mono',monospace;font-size:16px;color:#C9A96A;margin-bottom:26px">01</div>
+        <h3 style="font-family:'Playfair Display',serif;font-weight:600;font-size:24px;margin-bottom:14px">Diagnóstico</h3>
+        <p style="font-size:16px;line-height:1.65;color:rgba(20,24,28,.75)">Entendo sua oferta, seu comercial e onde o dinheiro está vazando.</p>
+      </div>
+      <div class="js-reveal" style="opacity:0;position:relative">
+        <div style="width:54px;height:54px;border:1px solid #C9A96A;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#F5F1EA;font-family:'IBM Plex Mono',monospace;font-size:16px;color:#C9A96A;margin-bottom:26px">02</div>
+        <h3 style="font-family:'Playfair Display',serif;font-weight:600;font-size:24px;margin-bottom:14px">Estruturação</h3>
+        <p style="font-size:16px;line-height:1.65;color:rgba(20,24,28,.75)">Monto as campanhas, entrego os criativos validados e treino sua equipe com o script de fluxograma.</p>
+      </div>
+      <div class="js-reveal" style="opacity:0;position:relative">
+        <div style="width:54px;height:54px;border:1px solid #C9A96A;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#C9A96A;font-family:'IBM Plex Mono',monospace;font-size:16px;color:#101826;margin-bottom:26px">03</div>
+        <h3 style="font-family:'Playfair Display',serif;font-weight:600;font-size:24px;margin-bottom:14px">Previsibilidade</h3>
+        <p style="font-size:16px;line-height:1.65;color:rgba(20,24,28,.75)">Anúncios contínuos, treinamentos mensais, relatórios semanais e um comercial que converte.</p>
+      </div>
+    </div>
+    <div class="js-reveal" style="opacity:0;margin-top:64px">
+      <a href="https://wa.me/SEUNUMERO" class="cta" style="display:inline-flex;align-items:center;gap:12px;background:#C9A96A;color:#101826;font-family:'Inter',sans-serif;font-weight:600;font-size:16px;padding:18px 36px;border-radius:2px;transition:background .3s ease,transform .3s ease">
+        <span>Quero começar pelo diagnóstico</span><span class="arrow" style="display:inline-block;transition:transform .35s cubic-bezier(.2,.8,.2,1)">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10 FAQ ============ -->
+<section style="background:#F5F1EA;padding:clamp(80px,11vw,150px) 6vw;border-top:1px solid rgba(20,24,28,.08)">
+  <div style="max-width:840px;margin:0 auto">
+    <h2 class="js-reveal" style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(28px,4vw,48px);line-height:1.12;margin-bottom:52px;opacity:0">As objeções que eu <em style="font-style:italic;color:#3E6E8E">mais escuto.</em></h2>
+    <div class="faq-list" style="display:flex;flex-direction:column">
+      <div class="faq-item js-reveal" style="opacity:0;border-top:1px solid rgba(20,24,28,.14)">
+        <button class="faq-q" type="button" style="width:100%;background:none;border:none;cursor:pointer;text-align:left;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:28px 0;font-family:'Playfair Display',serif;font-size:clamp(18px,2vw,23px);color:#14181C">
+          <span>"Já tentei tráfego e não deu certo."</span><span class="faq-icon" style="flex-shrink:0;color:#C9A96A;font-family:'IBM Plex Mono',monospace;font-size:24px;transition:transform .4s ease">+</span>
+        </button>
+        <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.2,.8,.2,1)"><p style="padding:0 0 30px;font-size:16.5px;line-height:1.7;color:rgba(20,24,28,.75);max-width:64ch">Você provavelmente teve campanha, mas não teve sistema. E provavelmente começou bem e foi caindo. Anúncio traz o lead; quem converte é o processo comercial. Por isso eu treino as duas pontas.</p></div>
+      </div>
+      <div class="faq-item js-reveal" style="opacity:0;border-top:1px solid rgba(20,24,28,.14)">
+        <button class="faq-q" type="button" style="width:100%;background:none;border:none;cursor:pointer;text-align:left;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:28px 0;font-family:'Playfair Display',serif;font-size:clamp(18px,2vw,23px);color:#14181C">
+          <span>"Meu Instagram é pequeno."</span><span class="faq-icon" style="flex-shrink:0;color:#C9A96A;font-family:'IBM Plex Mono',monospace;font-size:24px;transition:transform .4s ease">+</span>
+        </button>
+        <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.2,.8,.2,1)"><p style="padding:0 0 30px;font-size:16.5px;line-height:1.7;color:rgba(20,24,28,.75);max-width:64ch">Seguidor não é cliente. Já ajudei clínicas a lotar a agenda sem depender de número de seguidores.</p></div>
+      </div>
+      <div class="faq-item js-reveal" style="opacity:0;border-top:1px solid rgba(20,24,28,.14)">
+        <button class="faq-q" type="button" style="width:100%;background:none;border:none;cursor:pointer;text-align:left;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:28px 0;font-family:'Playfair Display',serif;font-size:clamp(18px,2vw,23px);color:#14181C">
+          <span>"Minha cidade é pequena."</span><span class="faq-icon" style="flex-shrink:0;color:#C9A96A;font-family:'IBM Plex Mono',monospace;font-size:24px;transition:transform .4s ease">+</span>
+        </button>
+        <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.2,.8,.2,1)"><p style="padding:0 0 30px;font-size:16.5px;line-height:1.7;color:rgba(20,24,28,.75);max-width:64ch">Quase sempre existe demanda. O que falta é posicionamento.</p></div>
+      </div>
+      <div class="faq-item js-reveal" style="opacity:0;border-top:1px solid rgba(20,24,28,.14)">
+        <button class="faq-q" type="button" style="width:100%;background:none;border:none;cursor:pointer;text-align:left;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:28px 0;font-family:'Playfair Display',serif;font-size:clamp(18px,2vw,23px);color:#14181C">
+          <span>"Meu procedimento é caro."</span><span class="faq-icon" style="flex-shrink:0;color:#C9A96A;font-family:'IBM Plex Mono',monospace;font-size:24px;transition:transform .4s ease">+</span>
+        </button>
+        <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.2,.8,.2,1)"><p style="padding:0 0 30px;font-size:16.5px;line-height:1.7;color:rgba(20,24,28,.75);max-width:64ch">Preço não é objeção quando há valor. O script foi feito exatamente para construir valor antes de falar em dinheiro.</p></div>
+      </div>
+      <div class="faq-item js-reveal" style="opacity:0;border-top:1px solid rgba(20,24,28,.14);border-bottom:1px solid rgba(20,24,28,.14)">
+        <button class="faq-q" type="button" style="width:100%;background:none;border:none;cursor:pointer;text-align:left;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:28px 0;font-family:'Playfair Display',serif;font-size:clamp(18px,2vw,23px);color:#14181C">
+          <span>"Meu problema é conteúdo."</span><span class="faq-icon" style="flex-shrink:0;color:#C9A96A;font-family:'IBM Plex Mono',monospace;font-size:24px;transition:transform .4s ease">+</span>
+        </button>
+        <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.2,.8,.2,1)"><p style="padding:0 0 30px;font-size:16.5px;line-height:1.7;color:rgba(20,24,28,.75);max-width:64ch">Na maioria das vezes, não é. É falta de estratégia comercial, e é isso que eu resolvo.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11 CTA FINAL ============ -->
+<section style="position:relative;overflow:hidden;background:#101826;color:#F5F1EA">
+  <img src="assets/eduardo-cta.png" alt="" aria-hidden="true" class="cta-bg" style="position:absolute;top:0;right:0;height:100%;width:46%;object-fit:cover;object-position:center;opacity:.5">
+  <div style="position:absolute;inset:0;background:linear-gradient(90deg,#101826 42%,rgba(16,24,38,.55) 70%,rgba(16,24,38,.35) 100%)"></div>
+  <div style="position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:clamp(90px,13vw,170px) 6vw">
+    <div style="max-width:60ch">
+      <h2 class="js-reveal" style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(30px,4.6vw,58px);line-height:1.1;letter-spacing:-.01em;margin-bottom:32px;opacity:0">Você não compra anúncio. <em style="font-style:italic;color:#C9A96A">Você compra tranquilidade.</em></h2>
+      <p class="js-reveal" style="font-size:clamp(16px,1.5vw,20px);line-height:1.7;color:rgba(245,241,234,.82);font-weight:300;margin-bottom:20px;opacity:0">Leads qualificados toda semana. Um comercial treinado. Faturamento previsível. E você deixando de carregar a clínica sozinha nas costas.</p>
+      <p class="js-reveal" style="font-size:clamp(16px,1.5vw,20px);line-height:1.7;color:rgba(245,241,234,.82);font-weight:300;margin-bottom:44px;opacity:0">Vamos começar com um diagnóstico da sua operação, sem compromisso. Se fizer sentido para os dois lados, seguimos juntos.</p>
+      <div class="js-reveal" style="opacity:0">
+        <a href="https://wa.me/SEUNUMERO" class="cta" style="display:inline-flex;align-items:center;gap:14px;background:#C9A96A;color:#101826;font-family:'Inter',sans-serif;font-weight:600;font-size:clamp(16px,1.6vw,19px);padding:22px 46px;border-radius:2px;transition:background .3s ease,transform .3s ease">
+          <span>Quero minha agenda previsível</span><span class="arrow" style="display:inline-block;transition:transform .35s cubic-bezier(.2,.8,.2,1)">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer style="background:#0b111c;color:#F5F1EA;padding:70px 6vw 50px">
+  <div style="max-width:1180px;margin:0 auto">
+    <div style="height:1px;background:linear-gradient(90deg,transparent,#C9A96A,transparent);margin-bottom:48px"></div>
+    <div style="display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:space-between">
+      <img src="assets/logo-horizontal-claro.png" alt="Alquimia das Vendas" style="height:44px;width:auto">
+      <div style="font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(20px,2.4vw,28px);color:rgba(245,241,234,.9)">"Transformamos quem transforma."</div>
+    </div>
+    <div style="margin-top:44px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;color:rgba(245,241,234,.45)">
+      <span>© Alquimia das Vendas</span>
+      <span>Tráfego + Comercial para clínicas de estética</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/SEUNUMERO" aria-label="Falar no WhatsApp" class="wa-float" style="position:fixed;bottom:26px;right:26px;z-index:200;width:58px;height:58px;border-radius:50%;background:#C9A96A;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(16,24,38,.35);transition:transform .3s ease">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#101826"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+</a>
+<script src="script.js"></script>
+</body>
+</html>

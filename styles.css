@@ -1,0 +1,23 @@
+*{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{background:#F5F1EA;color:#14181C;font-family:'Inter',sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  a{color:#C9A96A;text-decoration:none}
+  a:hover{color:#b8965a}
+  ::selection{background:#C9A96A;color:#101826}
+  @keyframes advMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @keyframes threadDraw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+  @keyframes heroKenBurns{from{transform:scale(1)}to{transform:scale(1.08)}}
+  .hero-slide.is-active .hero-slide-img{animation:heroKenBurns 6.5s ease-out forwards}
+  .swiper-button-next,.swiper-button-prev{color:#C9A96A!important;width:52px!important;height:52px!important}
+  .swiper-button-next:after,.swiper-button-prev:after{font-size:22px!important}
+  .swiper-pagination-bullet{background:#C9A96A!important}
+  .swiper-pagination-bullet-active{background:#C9A96A!important}
+  @media(max-width:760px){.swiper-button-next,.swiper-button-prev{display:none!important}}
+  .proto-card{transition:transform .45s cubic-bezier(.2,.8,.2,1),border-color .45s ease,box-shadow .45s ease}
+  .proto-card:hover{transform:translateY(-6px);border-color:#C9A96A;box-shadow:0 18px 44px rgba(0,0,0,.38),0 0 22px rgba(201,169,106,.14)}
+  .proto-card:hover .proto-ring{border-color:#C9A96A;box-shadow:0 0 22px rgba(201,169,106,.4)}
+  .proto-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  @media(max-width:900px){.proto-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:600px){.proto-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;padding-bottom:14px;-webkit-overflow-scrolling:touch}.proto-grid>.proto-card{flex:0 0 76%;scroll-snap-align:center}}
+  @media(max-width:640px){.receb-points{grid-template-columns:1fr!important;gap:30px!important}.reunioes-gallery{flex-wrap:wrap!important}.reunioes-gallery .reuniao-cell{flex:1 1 44%!important;height:260px!important}}
